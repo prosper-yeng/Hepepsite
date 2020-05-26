@@ -38,3 +38,7 @@ def portfolio(request):
 # contact function
 def contact(request):
     return render(request, 'accounts/contact.html')
+
+# about function
+def about(request):
+    return render(request, 'accounts/about.html')
