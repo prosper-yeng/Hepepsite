@@ -31,10 +31,14 @@
               <li><img src="{{serv.service_img.url}}" alt="" /></li>
             </div>
             <p>
-              {{serv.service_desc|safe|truncatewords:'12'|linebreaks}}
-            </p>
+
+                 {{serv.service_desc|safe|truncatewords:'12'|linebreaks}}
+                            </p>
             <div class="ficon">
-              <a href=" " class="btn btn-default" role="button">Read more</a>
+
+
+
+              <a href="" class="btn btn-default" role="button">Read more</a>
             </div>
           </div>
         </div>
@@ -59,8 +63,6 @@
         </div>
       </div>
 
-
-
       <div class="col-md-4">
         <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="1.6s">
           <div class="align-center">
@@ -75,7 +77,6 @@
               <a href="#" class="btn btn-default" role="button">Read more</a>
             </div>
           </div>
-
         </div>
       </div>
 -->
@@ -107,18 +108,15 @@
         {% endfor %}
 
 
-
-
-
       </div>
     </div>
   </div>
 
-  <div class="jumbotron">
+  <!--<div class="jumbotron">
     <h1>We can <span>help build your</span> project!</h1>
     <p>Voluptatem accusantium doloremque laudantium sprea totam rem aperiam</p>
     <p><a class="btn btn-primary btn-lg" href="#" role="button">Get it now</a></p>
-  </div>
+  </div>-->
 
 
 {% endblock content %}

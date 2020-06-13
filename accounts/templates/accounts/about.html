@@ -3,84 +3,133 @@
 {% block content %}
 
   <div class="jumbotron">
-    <h2>Blog</h2>
+    <h2>Our Vision</h2>
   </div>
 
-{% for myblog in bg %}
-  {% if forloop.first %}
-
-  <div class="blog">
+  <div class="our-services">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-8">
-          <div class="page-header">
-            <h3>{{myblog.post_title}}</h3>
-            <h5>{{myblog.post_date}} - Posted by: {{myblog.post_by.first_name}}</h5>
-            <img src="{{myblog.post_img.url}}" class="img-responsive" alt="" />
-            <p>{{ myblog.img_title }}</p>
 
-            <h3>{{myblog.post_title}}</h3>
-
-            <p>{{myblog.post_desc}}
-            </p>
-
-            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum.</p>
-
-            <div class="ficon">
-              <a href="" alt="">Read more</a>
-            </div>
-            {% endif %}
-            {% endfor %}
-          </div>
-
-          <nav>
-            <ul class="pager">
-              <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-              <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
-            </ul>
-          </nav>
-
-        </div>
-
-
-
-
-
-        <div class="recents">
-          <div class="col-xs-6 col-md-4">
-            <h5>Search for.</h5>
-            <form class="form-search">
-              <input class="form-control" type="text" placeholder="Search..">
-            </form>
-            <div class="page-header">
-              <h4>Recent Post</h4>
-            </div>
-
-            <div class="recent-post">
-              <ul class="recent">
-                {% for myblog in bg|slice:'3' %}
-                <li><a href="#">E{{myblog.post_title}}</a></li>
-                                {% endfor %}
-              </ul>
-            </div>
-
-
-            <ul class="list-group">
-              <div class="page-header">
-                <h4>Categories</h4>
+        <div class="col-md-6">
+          <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.4s">
+            <div class="services">
+              <div class="icons">
+                <i class="fa fa-heart-o fa-3x"></i>
               </div>
-               {% for myblog in bg|slice:'3' %}
-              <li class="list-group-item">
-                <span class="badge">{{myblog.post_category_set.count}}</span>
-                <a href="#" alt="">{{myblog.post_category}}</a>
-              </li>
-              {% endfor %}
-            </ul>
+              <h4>Quick Support</h4>
+              <p>
+                praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+              </p>
+            </div>
           </div>
+          <hr>
         </div>
+        <div class="col-md-6">
+          <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.8s">
+            <div class="services">
+              <div class="icons">
+                <i class="fa fa-desktop fa-3x"></i>
+              </div>
+              <h4>Web Design</h4>
+              <p>
+                praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+              </p>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+
       </div>
     </div>
   </div>
 
-  {% endblock content %}
 
+ <div class="jumbotron">
+    <h2>Our Mission</h2>
+  </div>
+
+  <div class="our-services">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.4s">
+            <div class="services">
+              <div class="icons">
+                <i class="fa fa-heart-o fa-3x"></i>
+              </div>
+              <h4>Quick Support</h4>
+              <p>
+                praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+              </p>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="col-md-6">
+          <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.8s">
+            <div class="services">
+              <div class="icons">
+                <i class="fa fa-desktop fa-3x"></i>
+              </div>
+              <h4>Web Design</h4>
+              <p>
+                praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+              </p>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+
+ <div class="jumbotron">
+    <h2>Our Story</h2>
+  </div>
+
+  <div class="our-services">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.4s">
+            <div class="services">
+              <div class="icons">
+                <i class="fa fa-heart-o fa-3x"></i>
+              </div>
+              <h4>Quick Support</h4>
+              <p>
+                praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+              </p>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="col-md-6">
+          <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.8s">
+            <div class="services">
+              <div class="icons">
+                <i class="fa fa-desktop fa-3x"></i>
+              </div>
+              <h4>Web Design</h4>
+              <p>
+                praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+              </p>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  {% endblock content %}

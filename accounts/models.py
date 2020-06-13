@@ -60,6 +60,15 @@ class Blog(models.Model):
         return self.post_category_set.count()
 
 
+class about(models.Model):
+    vision = models.TextField()
+    mission = models.TextField()
+    our_story = models.TextField()
+    service_img = models.ImageField(upload_to='pics')
+    status = models.BooleanField()
+
+    class Meta: verbose_name_plural = 'Services'
+
 # # Configuration models
 # class Regions(models.Model):
 #     region_name = models.CharField(max_length=200)
